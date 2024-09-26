@@ -1,0 +1,46 @@
+
+@mixin btn{
+    font-family: "Manrope", sans-serif;
+    background-color: var(--clr-primary);
+    color: var(--clr-white);
+    border-radius: 8px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    border: none;
+    user-select: none;
+    cursor: pointer;
+    transition: all 200ms;
+    &:hover, &:focus{
+        background-color: darken($clr-primary, 10%);
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.315);
+    }
+    &:active{
+        background-color: darken($clr-primary, 20%);
+        
+    }
+}
+
+@mixin circle-btn{
+    border-radius: 50%;
+    background-color: var(--clr-white); 
+    display: flex;
+    @include center;
+    cursor: pointer;
+    border: none;
+    text-decoration: none;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); 
+    &:hover {
+        transition: all 200ms;
+        background-color: darken($clr-white, 10%);
+    }
+    &:active{
+        background-color: darken($clr-white, 20%);
+    }
+}
+
+// primary btn, saknas bara width
+// .primary-btn{
+//     width: 160px;

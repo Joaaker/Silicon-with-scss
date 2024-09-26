@@ -1,0 +1,57 @@
+.dark-display{
+    display: none;
+    @include dark-mode{
+        display: block;
+    }
+}
+
+
+h1, h2, h3, h4, h5, h6, h7, h8, .p-logo, .store-btn {
+    @include dark-mode {
+        color: var(--clr-white);
+    }
+}
+
+.dropdown-btn {
+    @include dark-mode {
+        background-color: var(--clr-white-low-opacity);
+
+        span {
+            color: var(--clr-white);
+        }
+
+        i {
+            background-color: var(--clr-white-low-opacity);
+        }
+    }
+}
+
+.subscribe-form {
+    @include desktop {
+        @include dark-mode {
+            border: 1px solid var(--clr-white-opacity);
+            background-color: var(--clr-white-opacity);
+        }
+    }
+}
+
+#email {
+    @include desktop {
+        @include dark-mode {
+            background-color: transparent;
+        }
+    }
+}
+
+.store-btn{
+    @include dark-mode{
+        background-color: var(--clr-white);
+    }
+}
+
+
+.light-display{
+    @include dark-mode{
+        display: none;
+    }
+}

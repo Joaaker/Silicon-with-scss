@@ -1,0 +1,32 @@
+
+git add .
+
+git commit -m "Din commit-meddelande här, till exempel vad jag gjort eller ändrat"
+
+git push origin main
+
+
+
+
+
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+</style>
+
+font-family: "Manrope", sans-serif;
+
+Light
+
+
+
+
+
+
+background 1 #F3F6FF
+background 2 #FFFFFF
+Brand primary #6366F1
+warning #FFBA08
+text grey #565973
+
+DARK MODE https://youtu.be/v2kOviydoP4?t=1757

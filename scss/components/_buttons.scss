@@ -1,0 +1,87 @@
+.primary-btn{
+  @include btn;
+}
+
+.btn-mobile-tablet{
+  background-color: transparent;
+  border: none;
+  font-size: 2rem;
+}
+
+/* Grund-Kod för toggleknapp skriven av ChatGPT */
+.dark-mode-toggle {
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  font-weight: 600;
+  margin: 1rem 1.25rem;
+}
+    
+.darkmode-toggle-text {/* Kod för toggleknapp skriven av ChatGPT */
+  color: var(--clr-gray700);
+  margin-right: 10px;
+  display: none;
+}
+
+.toggle-checkbox {
+  display: none;  
+}
+
+.toggle-label {/* Kod för toggleknapp skriven av ChatGPT */
+  position: relative;
+  width: 60px;
+  height: 30px;
+  background-color: var(--clr-gray700);
+  border-radius: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  user-select: none;
+}
+    
+.toggle-label::after {/* Kod för toggleknapp skriven av ChatGPT */
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 24px;
+  height: 24px;
+  background-color: var(--clr-white);
+  border-radius: 50%;
+  transition: transform 0.3s;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+    
+.toggle-checkbox:checked + .toggle-label {/* Kod för toggleknapp skriven av ChatGPT */
+  background-color: var(--clr-primary);
+}
+    
+.toggle-checkbox:checked + .toggle-label::after {/* Kod för toggleknapp skriven av ChatGPT */
+  transform: translateX(30px);
+}
+
+.discover-btn-container{
+  display: flex;
+  @include center;
+  padding: 1rem;
+
+  .circle-btn{
+    @include circle-btn;
+    width: 44px;
+    height: 44px;
+    margin-left: auto;
+    margin-right: 0;
+
+    i{
+      color: var(--clr-icon);
+      font-size: 12px; 
+    }
+
+  }
+
+  span{
+    @include text;
+    margin-right: auto;
+    margin-left: 1rem;
+  }
+  
+}

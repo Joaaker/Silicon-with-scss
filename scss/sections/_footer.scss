@@ -1,0 +1,25 @@
+.container-footer{
+    height: 50vh;
+  }
+  
+  footer{ 
+    display: flex;
+    flex-direction: column;
+    @include center;
+    font-size: 14px;
+    color: var(--clr-gray600);
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    gap: 5px;
+
+    @include mobile{
+
+        p{
+            margin: 0;
+            padding: 0;
+        }
+    }
+
+  }
+
+

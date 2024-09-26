@@ -1,0 +1,42 @@
+.slider{
+  width: 100%;
+  background-color: var(--clr-background-light);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  h2{
+    font-size: 1.7rem;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+  }
+
+  h3{
+    text-align: center;
+  }
+
+  h3.mobile-only{
+    max-width: 260px;
+    font-size: 1.3rem;
+  }
+
+  h3.tablet-only{
+    max-width: 320px;
+  }
+
+  .p-mobile-tablet{
+    padding-bottom: 2rem;
+
+    @include mobile{
+      max-width: 370px;    
+    }
+
+    @include tablet{
+      max-width: 440px;
+    }
+  }
+
+  p{
+    text-align: center;
+  }
+}

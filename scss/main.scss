@@ -1,0 +1,31 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+@import "./colors/colors";
+@import "./mixins/mixins";
+
+@import "./colors/themes";
+
+
+
+@import "./misc/base";
+
+@import "./components/buttons";
+@import "./components/container";
+@import "./components/forms";
+@import "./components/headings";
+@import "./components/texts";
+@import "./components/images";
+@import "./components/links";
+
+@import "./sections/body";
+@import "./sections/header";
+@import "./sections/showcase";
+@import "./sections/logo-section";
+@import "./sections/features";
+@import "./sections/slider";
+@import "./sections/features2";
+@import "./sections/testimonials";
+@import "./sections/FAQ";
+@import "./sections/subscribe";
+@import "./sections/footer";

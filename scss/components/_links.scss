@@ -1,0 +1,23 @@
+.store-btn{
+    background-color: black;
+    display: flex;
+    @include center;
+    max-width: 95%;
+    margin: 0.5rem auto;
+    padding: 0.7rem 7rem;
+    border-radius: 8px;
+
+    @include tablet{
+        padding: 0.5rem 0.9rem;
+        max-width: 8rem;
+    }
+    @include desktop{
+        padding: 0.6rem 1.7rem;
+    }
+}
+
+#signin-auth-btn{
+    span{
+      margin-left: 0.7rem;
+    }
+}
